@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,20 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# URL is the base hostname with protocol for your site, eg http://example.com
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-# If you want to install this jekyll in a subpath (eg /digitalgarden) set it here. 
-# Else keep it Empty (DON'T PUT /; Keep it empty)
-baseurl: ""
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Website Header, Description, Footer year and text. 
 # If you are deleting this, make sure you remove it from HTML files too 
-heading: Jekyll Garden # Change this 
-content: Obsidian ready Jekyll Theme
-copyright:  
+heading: Gelato Code
+content: 
+copyright: 
   year: © 2022
-  msg: Contents under CC-BY-NC 
+  msg: Contents under CC-BY-NC
 
 # Set title and content for private & broken link tooltop
 privatelinks:
@@ -59,10 +63,10 @@ encoding: utf-8
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed 
-  - jekyll-sitemap 
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-tidy
-    
+
 ## Enable Collections
 ## Suggested collects are "notes" "lists" and "blog"
 collections:

@@ -2,7 +2,8 @@
 layout: Post
 permalink: /notes
 feedformat: card
-title: Digital Garden
+title: Documentation NodeJS
+date: 2022-12-01 +0800
 ---
 
-The feed page shows all notes from `notes` folder. If you want to hide any notes from this feed, add `feed:hide` on note's Frontmatter. Eg:[[Hidden Note]]
+Node.js allows the creation of Web servers and networking tools using JavaScript.
