@@ -31,7 +31,7 @@
 
 
 <!-- Parse internal links, external links, transclusion etc and manipulate the content to reflect it accordingly -->
-<p style="font-size: 16px; color: gray;">Lasted Updated on <b>{{ page.date | date_to_string }}</b></p>
+
 <div class="content">
     {%- if site.preferences.wiki_style_link.enabled -%}
         {%- assign content_array = content | split:'[[' -%}
@@ -62,7 +62,7 @@
 
         {%- assign external_url_array = external_urls | split:link_joiner_delimiter -%}
         {%- assign external_link_array = external_links | split:link_joiner_delimiter -%}
-
+        
         {%- assign replaced_content = content -%}
         {%- for title in internal_link_array -%}
             {%- assign url = internal_url_array[forloop.index0] -%}
@@ -71,6 +71,7 @@
             {%- elsif url == empty -%}
                 {%- assign link_text = '<span class="tooltip"><a class="stale-link" href="' | append: 'javascript:void(0)' | append: '">' | append: title | append: '</a> <span class="right bottom"> <span class="tooltip-title">' | append: {{site.privatelinks.title}} | append: '</span><br/><span class="tooltip-excerpt">' | append: {{site.privatelinks.msg}} | append : ' <br/></span> </span></span>' -%}
             {%- else -%}
+            <p style="font-size: 16px; color: gray;">Lasted Updated on <b>{{ page.date | date_to_string }}</b></p>
                     {%- assign post = site.notes | where: 'title',title -%}
                     {%- if post[0].title == nil -%}
                     {%- assign post = site.posts | where: 'title',title -%}
