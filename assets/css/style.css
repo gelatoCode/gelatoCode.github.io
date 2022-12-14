@@ -21,7 +21,7 @@ html[data-theme="dark"] {
     --color-bg-sub: #18181C;
     --color-text-main: #FAFAFC;
     --color-text-sub: #FFFEFF;
-    --color-text-link: #6D9EFF;
+    --color-text-link: #9B1B30;
     --color-border-dark: #E6E6E6;
     --color-border: #696969;
     --color-border-light: #353535;
@@ -35,7 +35,7 @@ html[data-theme="dark"] {
         --color-bg-sub: #18181C;
         --color-text-main: #FAFAFC;
         --color-text-sub: #FFFEFF;
-        --color-text-link: #6D9EFF;
+        --color-text-link: #9B1B30;
         --color-border-dark: #E6E6E6;
         --color-border: #696969;
         --color-border-light: #353535;
@@ -92,6 +92,7 @@ h2 {
     line-height: var(--text-leading-normal);
     font-weight: var(--text-weight-bold);
     padding: var(--padding-normal) 0;
+    color: #9B1B30;
 }
 
 h3 {
@@ -99,6 +100,7 @@ h3 {
     line-height: var(--text-leading-normal);
     font-weight: var(--text-weight-normal);
     padding: var(--padding-normal) 0;
+    color: #9B1B30;
 }
 
 h4 {
@@ -106,6 +108,7 @@ h4 {
     line-height: var(--text-leading-wide);
     font-weight: var(--text-weight-bold);
     padding: var(--padding-thin) 0;
+    color: #9B1B30;
 }
 
 h5 {
@@ -113,6 +116,7 @@ h5 {
     line-height: var(--text-leading-wide);
     font-weight: var(--text-weight-normal);
     padding: var(--padding-thin) 0;
+    color: #9B1B30;
 }
 
 h6 {
@@ -120,6 +124,7 @@ h6 {
     line-height: var(--text-leading-normal);
     font-weight: var(--text-weight-bold);
     padding: var(--padding-thin) 0;
+    color: #9B1B30;
 }
 
 p {
